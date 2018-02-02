@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="{CHARSET}">
+		<title></title>
+		<style>
+			*{padding:0;
+			 margin: 0;
+			 }
+			 ul li{ list-style: none;}
+			.tab{
+				width:600px;
+				height:400px;
+				background: red;
+				position:relative;
+			}	
+				
+			.tab ul{display: -webkit-flex;
+				       display: flex;
+				       flex-direction: row;}	
+				       
+			.tab ul li{width:200px;
+			              height:30px;
+			              background:aquamarine;
+			              text-align: center;
+			              line-height: 30px;
+			              cursor: pointer;
+			              }		
+			
+		.box{ width:600px;
+			      height:370px;
+			      position:absolute;
+			      top:30px;
+			      left:0;
+			      }
+			
+		.hover{ background: red!important;} 	
+		</style>
+	</head>
+	<body>
+		
+		<div class="tab">
+			<ul>
+				<li>1</li>
+				<li>2</li>
+				<li>3</li>
+			</ul>
+		</div>
+		<div >
+			<div class="box" style='background:aquamarine;'></div>
+			<div class="box" style='background: azure;'></div>
+			<div class="box" style='background: blue;'></div>
+		 </div> 
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="Tab.js"></script>
+	    <script type="text/javascript">
+		
+	    var config={
+		   		
+		   		tab:$(".tab ul li"),
+		   		box:$(".box"),
+		   		auto:true,//auto play default false
+				time:2000//default 1000
+		   	}	
+		   		
+		   	
+		  var o=new Tab(config) 	
+		   	
+		   		o.run()
+		   		
+		 </script>
+
+		</body>
+</html>		
+		  			
+			     	
+		   			
+		   		
+		   	
+		   		
+		   	
+		  
+		
+	 		
+		   	
+		          
+	   
+		
+		
+		
+		
+	
